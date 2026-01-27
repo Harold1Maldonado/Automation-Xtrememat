@@ -20,7 +20,7 @@ def human_service(order: dict) -> str:
     return (order.get("requestedShippingService") or "").strip()
 
 
-def flatten_order_for_csv(order: dict, tag_id: str) -> list[dict]:
+def flatten_order_for_csv(order: dict, tag_id: str, job_id: str) -> list[dict]:
     order_number = order.get("orderNumber", "")
     order_channel = (order.get("advancedOptions", {})
                      or {}).get("source", "") or ""
@@ -30,20 +30,28 @@ def flatten_order_for_csv(order: dict, tag_id: str) -> list[dict]:
     for item in order.get("items", []):
         sku = item.get("sku", "") or ""
         qty = int(item.get("quantity") or 0)
-        mfpn = item.get("warehouseLocation") or item.get(
-            "fulfillmentSku") or ""
 
         rows.append({
+            "JobID": job_id,
             "Order - Number": order_number,
             "Order - Channel": order_channel,
+
             "BoxContent": sku,
-            "MFPN": mfpn,
+            "MFPN": item.get("warehouseLocation") or item.get("fulfillmentSku") or "",
             "Item - SKU": sku,
             "FulfillableQty": qty,
             "Carrier - Service Requested": carrier_service_requested,
+
+            # Campos adicionales para diagnóstico / warehouse
+            "Fulfillment SKU": item.get("fulfillmentSku") or "",
+            "Warehouse Location": item.get("warehouseLocation") or "",
+            "UPC": item.get("upc") or "",
+            "Item Name": item.get("name") or "",
+            "Product ID": item.get("productId") or "",
+
+            # Auditoría
             "tagId": str(tag_id),
             "orderId": str(order.get("orderId", "")),
-            # útil para dedupe si lo implementas
             "orderItemId": str(item.get("orderItemId", "")),
         })
 
