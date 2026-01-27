@@ -63,7 +63,7 @@ def write_csv(rows: list[dict], filename: str):
             w.writerow({k: row.get(k, "") for k in CSV_COLUMNS})
 
 
-def run_export(tag_id: str, prefix: str, remote_dir: str):
+def run_export(tag_id: str, remote_dir: str):
     orders = fetch_orders(tag_id=tag_id)
     all_rows = []
 
@@ -71,17 +71,16 @@ def run_export(tag_id: str, prefix: str, remote_dir: str):
         all_rows.extend(flatten_order_for_csv(order, tag_id=str(tag_id)))
 
     if not all_rows:
-        print(f"[{prefix}] No hay filas para exportar (tag {tag_id}).")
+        print(f"[{tag_id}] No hay filas para exportar.")
         return
 
     ts = datetime.now().strftime("%Y%m%d_%H%M")
-    csv_filename = f"{prefix}_orders_{ts}.csv"
+    csv_filename = f"XTREME_{tag_id}_{ts}.csv"
 
     write_csv(all_rows, csv_filename)
     sftp_upload(csv_filename, remote_dir)
 
-    print(
-        f"[{prefix}] Exportado: {csv_filename} (filas: {len(all_rows)}) -> {remote_dir}")
+    print(f"[{tag_id}] Exportado: {csv_filename} (filas: {len(all_rows)})")
 
 
 def main():
@@ -93,8 +92,8 @@ def main():
     tag_golf = os.environ.get("TAG_GOLF", "56240")
     tag_cabinet = os.environ.get("TAG_CABINET", "56239")
 
-    run_export(tag_golf, "golf", remote_dir)
-    run_export(tag_cabinet, "cabinet", remote_dir)
+    run_export(tag_golf, remote_dir)
+    run_export(tag_cabinet, remote_dir)
 
 
 if __name__ == "__main__":

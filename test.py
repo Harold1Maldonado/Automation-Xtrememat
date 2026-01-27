@@ -15,7 +15,7 @@ if not API_KEY or not API_SECRET:
 url = "https://ssapi.shipstation.com/orders"
 params = {
     "orderStatus": "awaiting_shipment",
-    "tagId": "56240",      # IMPORTANTE: es tagId (con I mayúscula)
+    "tagId": "56240",
     "page": 1,
     "pageSize": 10
 }
