@@ -42,14 +42,14 @@ def flatten_order_for_csv(order: dict, tag_id: str, job_id: str) -> list[dict]:
             "FulfillableQty": qty,
             "Carrier - Service Requested": carrier_service_requested,
 
-            # Campos adicionales para diagnóstico / warehouse
+
             "Fulfillment SKU": item.get("fulfillmentSku") or "",
             "Warehouse Location": item.get("warehouseLocation") or "",
             "UPC": item.get("upc") or "",
             "Item Name": item.get("name") or "",
             "Product ID": item.get("productId") or "",
 
-            # Auditoría
+
             "tagId": str(tag_id),
             "orderId": str(order.get("orderId", "")),
             "orderItemId": str(item.get("orderItemId", "")),
