@@ -1,0 +1,16 @@
+2026-01-28 23:17:51,803 | INFO | ==== Inicio ejecución ShipStation export ====
+2026-01-28 23:17:51,803 | INFO | [56240] Iniciando exportación
+2026-01-28 23:17:52,683 | INFO | [56240] CSV creado local: XTREME_GOLF_20260128_2317.csv (filas: 42)
+2026-01-28 23:17:52,756 | INFO | Connected (version 2.0, client FILES.COM)
+2026-01-28 23:17:53,139 | INFO | Authentication (password) successful!
+2026-01-28 23:17:53,240 | INFO | [chan 0] Opened sftp connection (server version 3)
+2026-01-28 23:17:54,054 | INFO | [chan 0] sftp session closed.
+2026-01-28 23:17:54,056 | INFO | [56240] Subido por SFTP: XTREME_GOLF_20260128_2317.csv
+2026-01-28 23:17:54,066 | INFO | [56239] Iniciando exportación
+2026-01-28 23:17:54,912 | INFO | [56239] CSV creado local: XTREME_CABINET_20260128_2317.csv (filas: 42)
+2026-01-28 23:17:54,980 | INFO | Connected (version 2.0, client FILES.COM)
+2026-01-28 23:17:55,200 | INFO | Authentication (password) successful!
+2026-01-28 23:17:55,300 | INFO | [chan 0] Opened sftp connection (server version 3)
+2026-01-28 23:17:56,104 | INFO | [chan 0] sftp session closed.
+2026-01-28 23:17:56,105 | INFO | [56239] Subido por SFTP: XTREME_CABINET_20260128_2317.csv
+2026-01-28 23:17:56,105 | INFO | ==== Fin ejecución ShipStation export ====

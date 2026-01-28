@@ -35,6 +35,11 @@ CSV_COLUMNS = [
     "orderItemId",
 ]
 
+TAG_NAME_MAP = {
+    "56240": "GOLF",
+    "56239": "CABINET",
+}
+
 # =========================
 # LOGGING CONFIG
 # =========================
@@ -99,12 +104,9 @@ def write_csv(rows: list[dict], filename: str):
 
 
 def run_export(tag_id: str, remote_dir: str) -> dict:
-    """
-    Genera el CSV (si hay filas) y luego intenta subirlo.
-    Nunca lanza excepción hacia afuera: devuelve un resumen para logging/alertas.
-    """
     ts = datetime.now().strftime("%Y%m%d_%H%M")
-    job_id = f"XTREME_{tag_id}_{ts}"
+    tag_name = TAG_NAME_MAP.get(str(tag_id), str(tag_id))
+    job_id = f"XTREME_{tag_name}_{ts}"
     csv_filename = f"{job_id}.csv"
 
     logger.info(f"[{tag_id}] Iniciando exportación")
