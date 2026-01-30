@@ -1,0 +1,365 @@
+2026-01-30 20:18:48,247 | INFO | ==== Inicio ejecución ShipStation export ====
+2026-01-30 20:18:48,247 | INFO | [56240] Iniciando exportación
+2026-01-30 20:18:48,247 | INFO | [56240] Fetch ShipStation page=1
+2026-01-30 20:18:49,321 | INFO | [56240] ShipStation response page=1 orders=16
+2026-01-30 20:18:49,322 | INFO | ORDER SAMPLE (first order):
+{
+  "orderId": 914508563,
+  "orderNumber": "400045003",
+  "orderKey": "7096143020270-8198622183662",
+  "orderDate": "2026-01-26T20:27:51.0000000",
+  "createDate": "2026-01-26T21:11:24.5770000",
+  "modifyDate": "2026-01-26T22:51:53.9000000",
+  "paymentDate": "2026-01-26T20:27:51.0000000",
+  "shipByDate": null,
+  "orderStatus": "awaiting_shipment",
+  "customerId": 454932266,
+  "customerUsername": "9349975081198",
+  "customerEmail": "patrickvallee3@gmail.com",
+  "billTo": {
+    "name": "Patrick Vallee",
+    "company": null,
+    "street1": null,
+    "street2": null,
+    "street3": null,
+    "city": null,
+    "state": null,
+    "postalCode": null,
+    "country": null,
+    "phone": "+12516358917",
+    "residential": null,
+    "addressVerified": null
+  },
+  "shipTo": {
+    "name": "Patrick Vallee",
+    "company": null,
+    "street1": "3653 CHELSEA DR S",
+    "street2": "",
+    "street3": null,
+    "city": "MOBILE",
+    "state": "AL",
+    "postalCode": "36608-1501",
+    "country": "US",
+    "phone": "+12516358917",
+    "residential": true,
+    "addressVerified": "Address validated successfully"
+  },
+  "items": [
+    {
+      "orderItemId": 1722322668,
+      "lineItemKey": "16975858696430",
+      "sku": "GEN150-BEIGE",
+      "name": "Genesis 150 / GTW Mach1 - Beige Trim",
+      "imageUrl": "",
+      "weight": {
+        "value": 75.2,
+        "units": "ounces",
+        "WeightUnits": 1
+      },
+      "quantity": 1,
+      "unitPrice": 37.0,
+      "taxAmount": 0.0,
+      "shippingAmount": 0.0,
+      "warehouseLocation": "RFM06",
+      "options": [],
+      "productId": 41435944,
+      "fulfillmentSku": "RFM06",
+      "adjustment": false,
+      "upc": "810104280914",
+      "createDate": "2026-01-26T21:11:24.547",
+      "modifyDate": "2026-01-26T21:11:24.547"
+    },
+    {
+      "orderItemId": 1722322669,
+      "lineItemKey": "16975858696430",
+      "sku": "RFM-PINS-BUNDLE",
+      "name": "Plastic Pins + Drill Bit Combo for Rear Floor Mats (RFM)",
+      "imageUrl": null,
+      "weight": {
+        "value": 2.0,
+        "units": "ounces",
+        "WeightUnits": 1
+      },
+      "quantity": 1,
+      "unitPrice": 37.0,
+      "taxAmount": 0.0,
+      "shippingAmount": 0.0,
+      "warehouseLocation": "RFMPB",
+      "options": [],
+      "productId": 44464313,
+      "fulfillmentSku": "RFM-PINS-BUNDLE",
+      "adjustment": false,
+      "upc": "810104281669",
+      "createDate": "2026-01-26T21:11:24.547",
+      "modifyDate": "2026-01-26T21:11:24.547"
+    }
+  ],
+  "orderTotal": 74.0,
+  "amountPaid": 74.0,
+  "taxAmount": 0.0,
+  "shippingAmount": 0.0,
+  "customerNotes": null,
+  "internalNotes": null,
+  "gift": false,
+  "giftMessage": null,
+  "paymentMethod": "",
+  "requestedShippingService": "Fast & FREE UPS Ground CANNOT DELIVER TO P.O. BOXES",
+  "carrierCode": "stamps_com",
+  "serviceCode": "usps_parcel_select",
+  "packageCode": "package",
+  "confirmation": "none",
+  "shipDate": null,
+  "holdUntilDate": null,
+  "weight": {
+    "value": 77.2,
+    "units": "ounces",
+    "WeightUnits": 1
+  },
+  "dimensions": {
+    "units": "inches",
+    "length": 7.0,
+    "width": 7.0,
+    "height": 16.0
+  },
+  "insuranceOptions": {
+    "provider": null,
+    "insureShipment": false,
+    "insuredValue": 0.0
+  },
+  "internationalOptions": {
+    "contents": null,
+    "customsItems": null,
+    "nonDelivery": null
+  },
+  "advancedOptions": {
+    "warehouseId": 194370,
+    "nonMachinable": false,
+    "saturdayDelivery": false,
+    "containsAlcohol": false,
+    "mergedOrSplit": false,
+    "mergedIds": [],
+    "parentId": null,
+    "storeId": 191373,
+    "customField1": "",
+    "customField2": "1",
+    "customField3": "7096143020270",
+    "source": "web",
+    "billToParty": null,
+    "billToAccount": null,
+    "billToPostalCode": null,
+    "billToCountryCode": null,
+    "billToMyOtherAccount": 263177
+  },
+  "tagIds": [
+    56239,
+    59635,
+    67661,
+    118150
+  ],
+  "userId": "9f9ed827-6037-4707-911e-3d777213ec3e",
+  "externallyFulfilled": false,
+  "externallyFulfilledBy": null,
+  "externallyFulfilledById": null,
+  "externallyFulfilledByName": null,
+  "labelMessages": null
+}
+2026-01-30 20:18:49,324 | INFO | [56240] CSV creado local: XTREME_GOLF_20260130_2018.csv (filas: 31)
+2026-01-30 20:18:49,498 | INFO | Connected (version 2.0, client FILES.COM)
+2026-01-30 20:18:50,161 | INFO | Authentication (password) successful!
+2026-01-30 20:18:50,421 | INFO | [chan 0] Opened sftp connection (server version 3)
+2026-01-30 20:18:51,128 | INFO | [chan 0] sftp session closed.
+2026-01-30 20:18:51,128 | INFO | [56240] Subido por SFTP: XTREME_GOLF_20260130_2018.csv
+2026-01-30 20:18:51,128 | INFO | [56239] Iniciando exportación
+2026-01-30 20:18:51,129 | INFO | [56239] Fetch ShipStation page=1
+2026-01-30 20:18:52,022 | INFO | [56239] ShipStation response page=1 orders=16
+2026-01-30 20:18:52,023 | INFO | ORDER SAMPLE (first order):
+{
+  "orderId": 914508563,
+  "orderNumber": "400045003",
+  "orderKey": "7096143020270-8198622183662",
+  "orderDate": "2026-01-26T20:27:51.0000000",
+  "createDate": "2026-01-26T21:11:24.5770000",
+  "modifyDate": "2026-01-26T22:51:53.9000000",
+  "paymentDate": "2026-01-26T20:27:51.0000000",
+  "shipByDate": null,
+  "orderStatus": "awaiting_shipment",
+  "customerId": 454932266,
+  "customerUsername": "9349975081198",
+  "customerEmail": "patrickvallee3@gmail.com",
+  "billTo": {
+    "name": "Patrick Vallee",
+    "company": null,
+    "street1": null,
+    "street2": null,
+    "street3": null,
+    "city": null,
+    "state": null,
+    "postalCode": null,
+    "country": null,
+    "phone": "+12516358917",
+    "residential": null,
+    "addressVerified": null
+  },
+  "shipTo": {
+    "name": "Patrick Vallee",
+    "company": null,
+    "street1": "3653 CHELSEA DR S",
+    "street2": "",
+    "street3": null,
+    "city": "MOBILE",
+    "state": "AL",
+    "postalCode": "36608-1501",
+    "country": "US",
+    "phone": "+12516358917",
+    "residential": true,
+    "addressVerified": "Address validated successfully"
+  },
+  "items": [
+    {
+      "orderItemId": 1722322668,
+      "lineItemKey": "16975858696430",
+      "sku": "GEN150-BEIGE",
+      "name": "Genesis 150 / GTW Mach1 - Beige Trim",
+      "imageUrl": "",
+      "weight": {
+        "value": 75.2,
+        "units": "ounces",
+        "WeightUnits": 1
+      },
+      "quantity": 1,
+      "unitPrice": 37.0,
+      "taxAmount": 0.0,
+      "shippingAmount": 0.0,
+      "warehouseLocation": "RFM06",
+      "options": [],
+      "productId": 41435944,
+      "fulfillmentSku": "RFM06",
+      "adjustment": false,
+      "upc": "810104280914",
+      "createDate": "2026-01-26T21:11:24.547",
+      "modifyDate": "2026-01-26T21:11:24.547"
+    },
+    {
+      "orderItemId": 1722322669,
+      "lineItemKey": "16975858696430",
+      "sku": "RFM-PINS-BUNDLE",
+      "name": "Plastic Pins + Drill Bit Combo for Rear Floor Mats (RFM)",
+      "imageUrl": null,
+      "weight": {
+        "value": 2.0,
+        "units": "ounces",
+        "WeightUnits": 1
+      },
+      "quantity": 1,
+      "unitPrice": 37.0,
+      "taxAmount": 0.0,
+      "shippingAmount": 0.0,
+      "warehouseLocation": "RFMPB",
+      "options": [],
+      "productId": 44464313,
+      "fulfillmentSku": "RFM-PINS-BUNDLE",
+      "adjustment": false,
+      "upc": "810104281669",
+      "createDate": "2026-01-26T21:11:24.547",
+      "modifyDate": "2026-01-26T21:11:24.547"
+    }
+  ],
+  "orderTotal": 74.0,
+  "amountPaid": 74.0,
+  "taxAmount": 0.0,
+  "shippingAmount": 0.0,
+  "customerNotes": null,
+  "internalNotes": null,
+  "gift": false,
+  "giftMessage": null,
+  "paymentMethod": "",
+  "requestedShippingService": "Fast & FREE UPS Ground CANNOT DELIVER TO P.O. BOXES",
+  "carrierCode": "stamps_com",
+  "serviceCode": "usps_parcel_select",
+  "packageCode": "package",
+  "confirmation": "none",
+  "shipDate": null,
+  "holdUntilDate": null,
+  "weight": {
+    "value": 77.2,
+    "units": "ounces",
+    "WeightUnits": 1
+  },
+  "dimensions": {
+    "units": "inches",
+    "length": 7.0,
+    "width": 7.0,
+    "height": 16.0
+  },
+  "insuranceOptions": {
+    "provider": null,
+    "insureShipment": false,
+    "insuredValue": 0.0
+  },
+  "internationalOptions": {
+    "contents": null,
+    "customsItems": null,
+    "nonDelivery": null
+  },
+  "advancedOptions": {
+    "warehouseId": 194370,
+    "nonMachinable": false,
+    "saturdayDelivery": false,
+    "containsAlcohol": false,
+    "mergedOrSplit": false,
+    "mergedIds": [],
+    "parentId": null,
+    "storeId": 191373,
+    "customField1": "",
+    "customField2": "1",
+    "customField3": "7096143020270",
+    "source": "web",
+    "billToParty": null,
+    "billToAccount": null,
+    "billToPostalCode": null,
+    "billToCountryCode": null,
+    "billToMyOtherAccount": 263177
+  },
+  "tagIds": [
+    56239,
+    59635,
+    67661,
+    118150
+  ],
+  "userId": "9f9ed827-6037-4707-911e-3d777213ec3e",
+  "externallyFulfilled": false,
+  "externallyFulfilledBy": null,
+  "externallyFulfilledById": null,
+  "externallyFulfilledByName": null,
+  "labelMessages": null
+}
+2026-01-30 20:18:52,024 | INFO | [56239] CSV creado local: XTREME_CABINET_20260130_2018.csv (filas: 31)
+2026-01-30 20:18:52,198 | INFO | Connected (version 2.0, client FILES.COM)
+2026-01-30 20:18:52,723 | INFO | Authentication (password) successful!
+2026-01-30 20:18:52,984 | INFO | [chan 0] Opened sftp connection (server version 3)
+2026-01-30 20:18:53,716 | INFO | [chan 0] sftp session closed.
+2026-01-30 20:18:53,717 | INFO | [56239] Subido por SFTP: XTREME_CABINET_20260130_2018.csv
+2026-01-30 20:18:53,717 | INFO | ==== Fin ejecución ShipStation export ====
+2026-01-30 20:29:13,248 | INFO | ==== Inicio ejecución ShipStation export ====
+2026-01-30 20:29:13,876 | INFO | Stores cargadas: 15
+2026-01-30 20:29:13,876 | INFO | [56240] Iniciando exportación job_id=XTREME_GOLF_20260130_2029
+2026-01-30 20:29:13,876 | INFO | [56240] Fetch ShipStation page=1
+2026-01-30 20:29:14,617 | INFO | [56240] ShipStation response page=1 orders=9
+2026-01-30 20:29:14,618 | INFO | [56240] Orders descargadas: 9
+2026-01-30 20:29:14,619 | INFO | [56240] CSV creado local: XTREME_GOLF_20260130_2029.csv (filas: 15)
+2026-01-30 20:29:14,793 | INFO | Connected (version 2.0, client FILES.COM)
+2026-01-30 20:29:15,376 | INFO | Authentication (password) successful!
+2026-01-30 20:29:15,636 | INFO | [chan 0] Opened sftp connection (server version 3)
+2026-01-30 20:29:16,554 | INFO | [chan 0] sftp session closed.
+2026-01-30 20:29:16,554 | INFO | [56240] Subido por SFTP: XTREME_GOLF_20260130_2029.csv
+2026-01-30 20:29:16,554 | INFO | [56239] Iniciando exportación job_id=XTREME_CABINET_20260130_2029
+2026-01-30 20:29:16,554 | INFO | [56239] Fetch ShipStation page=1
+2026-01-30 20:29:17,349 | INFO | [56239] ShipStation response page=1 orders=9
+2026-01-30 20:29:17,351 | INFO | [56239] Orders descargadas: 9
+2026-01-30 20:29:17,352 | INFO | [56239] CSV creado local: XTREME_CABINET_20260130_2029.csv (filas: 15)
+2026-01-30 20:29:17,526 | INFO | Connected (version 2.0, client FILES.COM)
+2026-01-30 20:29:18,063 | INFO | Authentication (password) successful!
+2026-01-30 20:29:18,325 | INFO | [chan 0] Opened sftp connection (server version 3)
+2026-01-30 20:29:19,316 | INFO | [chan 0] sftp session closed.
+2026-01-30 20:29:19,316 | INFO | [56239] Subido por SFTP: XTREME_CABINET_20260130_2029.csv
+2026-01-30 20:29:19,316 | INFO | ==== Fin ejecución ShipStation export ====
