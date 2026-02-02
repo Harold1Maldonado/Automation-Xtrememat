@@ -1,0 +1,23 @@
+2026-02-02 18:29:24,895 | INFO | ==== Inicio ejecución ShipStation export ====
+2026-02-02 18:29:25,581 | INFO | Stores cargadas: 15
+2026-02-02 18:29:25,581 | INFO | [56240] Iniciando exportación (XTREME_GOLF_20260202_1829)
+2026-02-02 18:29:25,581 | INFO | [56240] Fetch ShipStation page=1
+2026-02-02 18:29:26,807 | INFO | [56240] Orders recibidas página 1: 38
+2026-02-02 18:29:26,808 | INFO | [56240] Orders descargadas: 38
+2026-02-02 18:29:26,818 | INFO | [56240] CSV creado: XTREME_GOLF_20260202_1829.csv (filas: 54)
+2026-02-02 18:29:27,029 | INFO | Connected (version 2.0, client FILES.COM)
+2026-02-02 18:29:27,775 | INFO | Authentication (password) successful!
+2026-02-02 18:29:28,089 | INFO | [chan 0] Opened sftp connection (server version 3)
+2026-02-02 18:29:29,154 | INFO | [chan 0] sftp session closed.
+2026-02-02 18:29:29,155 | INFO | [56240] CSV subido por SFTP
+2026-02-02 18:29:29,155 | INFO | [56239] Iniciando exportación (XTREME_CABINET_20260202_1829)
+2026-02-02 18:29:29,155 | INFO | [56239] Fetch ShipStation page=1
+2026-02-02 18:29:30,164 | INFO | [56239] Orders recibidas página 1: 56
+2026-02-02 18:29:30,165 | INFO | [56239] Orders descargadas: 56
+2026-02-02 18:29:30,166 | INFO | [56239] CSV creado: XTREME_CABINET_20260202_1829.csv (filas: 96)
+2026-02-02 18:29:30,375 | INFO | Connected (version 2.0, client FILES.COM)
+2026-02-02 18:29:30,995 | INFO | Authentication (password) successful!
+2026-02-02 18:29:31,306 | INFO | [chan 0] Opened sftp connection (server version 3)
+2026-02-02 18:29:32,332 | INFO | [chan 0] sftp session closed.
+2026-02-02 18:29:32,333 | INFO | [56239] CSV subido por SFTP
+2026-02-02 18:29:32,333 | INFO | ==== Fin ejecución ShipStation export ====

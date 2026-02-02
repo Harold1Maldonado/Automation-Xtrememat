@@ -9,10 +9,7 @@ SHIPSTATION_STORES_URL = "https://ssapi.shipstation.com/stores"
 
 
 def fetch_stores_map(retries: int = 4) -> Dict[str, str]:
-    """
-    Devuelve dict storeId -> storeName.
-    solo viene storeId,  necesario  "Market - Store Name".
-    """
+
     api_key = os.environ["SHIPSTATION_API_KEY"]
     api_secret = os.environ["SHIPSTATION_API_SECRET"]
 
