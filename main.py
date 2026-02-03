@@ -13,10 +13,10 @@ from shipstation_utils import flatten_order_for_csv, fetch_stores_map
 from sftp_utils import sftp_upload
 
 
-# ✅ ENDPOINT CORRECTO PARA FILTRAR POR TAG
+#  ENDPOINT CORRECTO PARA FILTRAR POR TAG
 SHIPSTATION_ORDERS_URL = "https://ssapi.shipstation.com/orders/listbytag"
 
-# Columnas EXACTAS requeridas por el receptor (no agregar más)
+# Columnas EXACTAS requeridas por el receptor
 CSV_COLUMNS = [
     "Order - Status",
     "Carrier - Service Sel",
@@ -34,8 +34,8 @@ CSV_COLUMNS = [
 ]
 
 TAG_NAME_MAP = {
-    "56240": "GOLF",
-    "56239": "CABINET",
+    "56239": "GOLF",
+    "56240": "CABINET",
 }
 
 # =========================
@@ -153,7 +153,7 @@ def run_export(tag_id: str, remote_dir: str, stores_map: Dict[str, str]) -> Dict
     orders = fetch_orders(tag_id=tag_id)
     logger.info(f"[{tag_id}] Orders descargadas: {len(orders)}")
 
-    # 🔎 VALIDACIÓN DE SEGURIDAD: ¿ShipStation realmente filtró por tag?
+    #  VALIDACIÓN DE SEGURIDAD
     bad = [
         o for o in orders
         if str(tag_id) not in [str(t) for t in (o.get("tagIds") or [])]
